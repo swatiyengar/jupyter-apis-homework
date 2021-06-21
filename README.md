@@ -1,9 +1,9 @@
 # Assignment Summary
-"Homework 04: Jupyter, APIs, git and GitHub" was a three-part assignment:
+**"Homework 04: Jupyter, APIs, git and GitHub"** was a three-part assignment:
     Part 1: Answer questions using the WeatherAPI
-        - The questions and related code to answer the questions can be found in "WeatherAPI API (Weather).ipynb" in this repo
+        - The questions and related code to answer the questions can be found in "*WeatherAPI API (Weather).ipynb*" in this repo
     Part 2: Answer questions LastFM's API
-        - The questions and related code to answer the questions can be found in "Last FM API (Music).ipynb" in this repo
+        - The questions and related code to answer the questions can be found in "*Last FM API (Music).ipynb*" in this repo
     Part 3: Uploading the files to this GitHub repository
  
 # What I Learned During the Process
@@ -33,7 +33,7 @@ Incorrect:
         hottest_day = days['date']
 print(f"{hottest_day} is the hottest day with a max temperature of {max_temp} degrees F.") 
 `code`
-
+---
 Correct:
 `code`
  max_temp = -200
@@ -82,6 +82,7 @@ for url_requests in mbid_urls[:10]:
                 artist_tag = "not hip hop"
             print(f"{mbid_url_artist['name']} : {artist_tag}") #Because of that error, the artist is tagged as hip hop or not hip hop based on the LAST tag given (e.g. Lil Kim is not hip hop because her last tag is rnb. INCORRECT because hip hop is her first tag)
              `code`
+---
              - Correct Code
              `code`
 hip_hop_tags = ["hip hop","swag","crunk","rap","dirty south","memphis rap","gangsta rap","hip-hop", "trill shit"] #Genres that might be considered hip are defined at the beginning
