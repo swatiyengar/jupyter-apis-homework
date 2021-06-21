@@ -1,10 +1,10 @@
 # Assignment Summary
 **"Homework 04: Jupyter, APIs, git and GitHub"** was a three-part assignment:
-    Part 1: Answer questions using the WeatherAPI
+1. Part 1: Answer questions using the WeatherAPI
         - The questions and related code to answer the questions can be found in "*WeatherAPI API (Weather).ipynb*" in this repo
-    Part 2: Answer questions LastFM's API
+2. Part 2: Answer questions LastFM's API
         - The questions and related code to answer the questions can be found in "*Last FM API (Music).ipynb*" in this repo
-    Part 3: Uploading the files to this GitHub repository
+3. Part 3: Uploading the files to this GitHub repository
  
 # What I Learned During the Process
 
@@ -21,8 +21,8 @@ current_weather_url = f"https://api.weatherapi.com/v1/current.json?key={api_key}
  
 ## For Loops
  - I learned more about defining variables. For instance, in the code below, I initially did not define hottest_day prior to running the for loop. Thus, the maximum temperature was linked to the last day of the forecast, not the actual hottest day.
- 
-Incorrect:
+    
+    Incorrect:
 `code`
  max_temp = -200
  for days in forecastday:
@@ -34,7 +34,7 @@ Incorrect:
 print(f"{hottest_day} is the hottest day with a max temperature of {max_temp} degrees F.") 
 `code`
 ---
-Correct:
+    Correct:
 `code`
  max_temp = -200
  hottest_day = ""
@@ -65,7 +65,7 @@ print(f"{hottest_day} is the hottest day with a max temperature of {max_temp} de
 - Q12: Using the first ten mbids, print the artist's name and whether they're a rapper
         - overwriting data in for loops:
             - Incorrect Code
-             `code`
+`code`
 for url_requests in mbid_urls[:10]:
         url_request = requests.get(url_requests)
         url_request = url_request.json()
@@ -81,10 +81,12 @@ for url_requests in mbid_urls[:10]:
             else:
                 artist_tag = "not hip hop"
             print(f"{mbid_url_artist['name']} : {artist_tag}") #Because of that error, the artist is tagged as hip hop or not hip hop based on the LAST tag given (e.g. Lil Kim is not hip hop because her last tag is rnb. INCORRECT because hip hop is her first tag)
-             `code`
----
+`code`
+    ---
+    
              - Correct Code
-             `code`
+
+`code`
 hip_hop_tags = ["hip hop","swag","crunk","rap","dirty south","memphis rap","gangsta rap","hip-hop", "trill shit"] #Genres that might be considered hip are defined at the beginning
 for url_requests in mbid_urls[:10]:
     url_request = requests.get(url_requests)
@@ -104,4 +106,4 @@ for url_requests in mbid_urls[:10]:
     else:
         print(artist_name, "is not hip-hop.")
     #print(f"{mbid_url_artist['name']} : {artist_tag}")
-             `code`
+`code`
