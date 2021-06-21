@@ -156,6 +156,6 @@ for url_requests in mbid_urls[:10]:
         count_is_hiphop = count_is_hiphop + 1
     else:
         print(artist_name, "is not hip-hop.")
-print(f"{((count_is_hiphop)/len(mbid_url_artist))*100}% of artists in this request are tagged as hiphop")
+print((count_is_hiphop))
 ```
 
