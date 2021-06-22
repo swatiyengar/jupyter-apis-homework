@@ -9,7 +9,7 @@
 # What I Learned During the Process
 
 ## String "automation"
- - I discovered how to use a user's input value to automatically create urls for API endpoint requests. For instance, in the code below, defining api_key and location based on the user's input and using those variables inside an f-string to define the weather endpoint - the code becomes more flexible.
+ - I discovered how to use a user's input value to automatically create urls for API endpoint requests. For instance, in the code below, I defined api_key and location based on the user's input used those variables inside an f-string to define the weather endpoint.
  
 ```
 api_key = input("What is your WeatherAPI.com API key? Don't have one? Sign-up here: https://www.weatherapi.com/")
